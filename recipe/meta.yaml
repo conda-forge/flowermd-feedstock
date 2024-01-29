@@ -1,5 +1,5 @@
 {% set name = "flowermd" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cmelab/flowerMD/archive/{{ version }}.tar.gz
-  sha256: 1a40286de31711e20a9a0881810bb62e58756228130dad7fb818ace251f02f1c
+  sha256: 28b941c571ac9ae05d535b69c2143c8785ac3eb0dd5a554eaa788f3635d823cc 
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
