@@ -154,5 +154,5 @@ Feedstock Maintainers
 
 * [@chrisjonesBSU](https://github.com/chrisjonesBSU/)
 * [@erjank](https://github.com/erjank/)
-* [@marjanalbooyeh](https://github.com/marjanalbooyeh)
+* [@marjanalbooyeh](https://github.com/marjanalbooyeh/)
 
