@@ -1,5 +1,5 @@
 {% set name = "flowermd" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cmelab/flowerMD/archive/{{ version }}.tar.gz
-  sha256: 28b941c571ac9ae05d535b69c2143c8785ac3eb0dd5a554eaa788f3635d823cc
+  sha256: 02a61e52c958c6d2cbd1fb10b132c3cb7a1a64d37e34fa01c55ab6d8907461e6
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -16,18 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9, <3.12
     - pip
   run:
-    - python >=3.9
+    - python >=3.9, <3.12
     - foyer >=0.12.0
     - freud >=2.13.1
-    - grits >=0.3.0
-    - cmeutils >=1.0
+    - grits >=0.4.1
+    - cmeutils >=1.1
     - gsd >=3.0
-    - gmso >=0.11.2
+    - gmso >=0.12.0
     - hoomd >=4.0
-    - mbuild >=0.16.4
+    - mbuild >0.16.4
     - numpy
     - openbabel >=3
     - py3Dmol
@@ -52,5 +52,5 @@ about:
 extra:
   recipe-maintainers:
     - chrisjonesBSU
-    - marjanAlbouye
+    - marjanalbooyeh
     - erjank
