@@ -46,8 +46,10 @@ test:
     - flowermd/tests/assets/
   imports:
     - flowermd
+    - flowermd.library
   commands:
-    - bash test.sh
+    - ls 
+    - bash ./test.sh
 
 about:
   home: https://github.com/cmelab/flowerMD

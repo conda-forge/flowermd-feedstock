@@ -8,4 +8,3 @@ cp -r flowermd/tests/assets $PREFIX/lib/python${PYTHON_VERSION}/site-packages/fl
 
 # Run the tests
 pytest
-
