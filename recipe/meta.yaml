@@ -41,10 +41,12 @@ test:
     - pip
     - pytest
     - pytest-xdist
+  source_files:
+    - tests/
   imports:
     - flowermd
   commands:
-    - pytest -v -n auto --pyargs flowermd 
+    - pytest -v -n auto tests/ 
 
 about:
   home: https://github.com/cmelab/flowerMD
