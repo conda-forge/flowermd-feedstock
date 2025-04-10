@@ -47,6 +47,7 @@ test:
   imports:
     - flowermd
   commands:
+    - ls -R
     - pytest -v -n auto flowermd/tests/ 
 
 about:
