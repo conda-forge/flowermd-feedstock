@@ -42,7 +42,7 @@ test:
     - pytest
     - pytest-xdist
   source_files:
-    - tests/
+    - flowermd/tests/
   imports:
     - flowermd
   commands:
