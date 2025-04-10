@@ -47,7 +47,7 @@ test:
   imports:
     - flowermd
   commands:
-    - bash build.sh
+    - bash test.sh
 
 about:
   home: https://github.com/cmelab/flowerMD
