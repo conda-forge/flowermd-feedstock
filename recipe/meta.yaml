@@ -20,6 +20,9 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
+  source_files:
+    - flowermd/tests/ # Include tests and asstes for build/test
+    - flowermd/tests/assets/
   run:
     - python >={{ python_min }},<3.13
     - foyer >=0.12.0
