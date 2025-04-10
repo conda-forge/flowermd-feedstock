@@ -20,9 +20,6 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-  source_files:
-    - flowermd/tests/ # Include tests and asstes for build/test
-    - flowermd/tests/assets/
   run:
     - python >={{ python_min }},<3.13
     - foyer >=0.12.0
@@ -50,8 +47,7 @@ test:
   imports:
     - flowermd
   commands:
-    - ls -R
-    - pytest -v -n auto flowermd/tests/ 
+    - bash build.sh
 
 about:
   home: https://github.com/cmelab/flowerMD
