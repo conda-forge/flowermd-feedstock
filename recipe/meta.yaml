@@ -43,6 +43,7 @@ test:
     - pytest-xdist
   source_files:
     - flowermd/tests/
+    - flowermd/tests/assets/
   imports:
     - flowermd
   commands:
