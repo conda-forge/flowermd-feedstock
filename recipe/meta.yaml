@@ -46,7 +46,7 @@ test:
   imports:
     - flowermd
   commands:
-    - pytest -v -n auto tests/ 
+    - pytest -v -n auto flowermd/tests/ 
 
 about:
   home: https://github.com/cmelab/flowerMD
