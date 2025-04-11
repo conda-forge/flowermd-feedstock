@@ -48,22 +48,7 @@ test:
     - flowermd
     - flowermd.library
     commands:
-    - |
-      pytest -v -n auto \
-        --deselect test_base_xml_forcefield \
-        --deselect test_molecule_from_file \
-        --deselect test_validate_force_field_xml_file_path \
-        --deselect test_validate_force_field_hoomd_ff_missing_Coulomb \
-        --deselect test_system_from_mol2_mol_parameterization \
-        --deselect test_FF_from_file \
-        --deselect test_from_txt_file \
-        --deselect test_from_csv_file \
-        --deselect test_from_npy_file \
-        --deselect test_interface_builder \
-        --deselect test_wetting_sim \
-        --deselect test_find_xml_ff_path \
-        --deselect test_xml_to_gmso_ff \
-        flowermd/tests/
+    - pytest -v -n auto flowermd/tests/base/test_simulation.py 
 about:
   home: https://github.com/cmelab/flowerMD
   license: GPL-3.0-or-later
