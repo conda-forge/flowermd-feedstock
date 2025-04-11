@@ -48,6 +48,7 @@ test:
     - flowermd
     - flowermd.library
   commands:
+    - pwd
     - ls 
     - bash ./test.sh
 
