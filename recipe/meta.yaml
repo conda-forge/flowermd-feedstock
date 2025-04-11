@@ -47,8 +47,25 @@ test:
   imports:
     - flowermd
     - flowermd.library
-    commands:
-    - pytest -v -n auto flowermd/tests/base/test_simulation.py 
+  commands:
+    - |
+      echo "Running filtered tests..."
+      pytest -v -n auto \
+        --deselect flowermd/tests/base/test_forcefield.py::TestBaseForcefield::test_base_xml_forcefield \
+        --deselect flowermd/tests/base/test_molecule.py::TestMolecule::test_molecule_from_file \
+        --deselect flowermd/tests/base/test_molecule.py::TestMolecule::test_validate_force_field_xml_file_path \
+        --deselect flowermd/tests/base/test_molecule.py::TestMolecule::test_validate_force_field_hoomd_ff_missing_Coulomb \
+        --deselect flowermd/tests/base/test_system.py::TestSystem::test_system_from_mol2_mol_parameterization \
+        --deselect flowermd/tests/library/test_forcefields.py::TestForceFields::test_FF_from_file \
+        --deselect flowermd/tests/library/test_forcefields.py::TestTableForcefield::test_from_txt_file \
+        --deselect flowermd/tests/library/test_forcefields.py::TestTableForcefield::test_from_csv_file \
+        --deselect flowermd/tests/library/test_forcefields.py::TestTableForcefield::test_from_npy_file \
+        --deselect flowermd/tests/modules/test_surface_wetting.py::TestInterfaceBuilder::test_interface_builder \
+        --deselect flowermd/tests/modules/test_surface_wetting.py::TestWettingSimulation::test_wetting_sim \
+        --deselect flowermd/tests/utils/test_ff_utils.py::TestFFUtils::test_find_xml_ff_path \
+        --deselect flowermd/tests/utils/test_ff_utils.py::TestFFUtils::test_xml_to_gmso_ff \
+        flowermd/tests/
+
 about:
   home: https://github.com/cmelab/flowerMD
   license: GPL-3.0-or-later
