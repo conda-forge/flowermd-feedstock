@@ -43,10 +43,8 @@ test:
     - pytest-xdist
   source_files:
     - flowermd/tests/
-    - flowermd/tests/assets/
   imports:
     - flowermd
-    - flowermd.library
   commands:
     - |
       echo "Running filtered tests..."
