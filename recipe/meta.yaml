@@ -44,6 +44,7 @@ test:
   source_files:
     - flowermd/tests/
     - flowermd/tests/assets/
+    - test.sh
   imports:
     - flowermd
     - flowermd.library
