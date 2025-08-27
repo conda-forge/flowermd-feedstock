@@ -28,7 +28,7 @@ requirements:
     - cmeutils >=1.3
     - gsd >=3.0
     - gmso >=0.12.0
-    - hoomd >=4.6, !=5.3.0
+    - hoomd >=4.6,!=5.3.0
     - mbuild >0.17.0
     - numpy <2.0
     - openbabel >=3
