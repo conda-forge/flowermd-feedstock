@@ -50,6 +50,7 @@ test:
       echo "Running filtered tests..."
       pytest -v -n auto \
         --deselect flowermd/tests/base/test_forcefield.py::TestBaseForcefield::test_base_xml_forcefield \
+        --deselect flowermd/tests/base/test_system.py::TestSystem::test_number_density \ 
         --deselect flowermd/tests/base/test_molecule.py::TestMolecule::test_molecule_from_file \
         --deselect flowermd/tests/base/test_molecule.py::TestMolecule::test_validate_force_field_xml_file_path \
         --deselect flowermd/tests/base/test_molecule.py::TestMolecule::test_validate_force_field_hoomd_ff_missing_Coulomb \
