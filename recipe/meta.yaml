@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/cmelab/flowerMD/archive/{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: e2aa200fef84d064982450af6ae9afa953d757f9a359aca35d2709478898e3c6
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
