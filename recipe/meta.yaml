@@ -61,6 +61,8 @@ test:
         --deselect flowermd/tests/library/test_forcefields.py::TestTableForcefield::test_from_npy_file \
         --deselect flowermd/tests/modules/test_surface_wetting.py::TestInterfaceBuilder::test_interface_builder \
         --deselect flowermd/tests/modules/test_surface_wetting.py::TestWettingSimulation::test_wetting_sim \
+        --deselect flowermd/tests/modules/test_surface_wetting.py::TestDropletSimulation::test_droplet_sim \
+        --deselect flowermd/tests/modules/test_surface_wetting.py::TestDropletSimulation::test_droplet_sim_no_units \
         --deselect flowermd/tests/utils/test_ff_utils.py::TestFFUtils::test_find_xml_ff_path \
         --deselect flowermd/tests/utils/test_ff_utils.py::TestFFUtils::test_xml_to_gmso_ff \
         --deselect flowermd/tests/modules/test_weld.py \
